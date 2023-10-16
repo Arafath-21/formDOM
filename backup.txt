@@ -1,0 +1,76 @@
+<div class="container">
+    <h1 class="text-center mb-3">Sample Form</h1>
+    <form>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label h4">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label h4">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+            </div>            
+
+        <div class="mb-3">
+            <label for="address" class="form-label h4">Address</label>
+            <textarea class="form-control" id="address" rows="3" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="pincode" class="form-label h4">Pincode</label>
+            <input type="text" class="form-control" id="pincode" placeholder="Enter your pincode" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="gender" class="form-label h4">Gender</label>
+            <select class="form-select" id="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label h4">Choice of Food (Select at least 2)</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="food[]" value="pizza" id="foodPizza">
+                <label class="form-check-label" for="foodPizza">Pizza</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="food[]" value="burger" id="foodBurger">
+                <label class="form-check-label" for="foodBurger">Burger</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="food[]" value="sushi" id="foodSushi">
+                <label class="form-check-label" for="foodSushi">Sushi</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="food[]" value="pasta" id="foodPasta">
+                <label class="form-check-label" for="foodPasta">Pasta</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="food[]" value="salad" id="foodSalad">
+                <label class="form-check-label" for="foodSalad">Salad</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="state" class="form-label h4">State</label>
+            <input type="text" class="form-control" id="state" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="country" class="form-label h4">Country</label>
+            <input type="text" class="form-control" id="country" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
